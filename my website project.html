@@ -1,0 +1,79 @@
+<!doctype html>
+    <head>
+        <title> Malina's plant shop></title>
+        <style>
+            img{
+                width:100px;
+            }
+            input{
+                width:30px;
+
+            }
+
+        </style>
+        <script>
+            function purchase(){
+                var cost = document.getElementById("cost");
+                var qty1 = document.getElementById("quanty1");
+                var qty2 = document.getElementById("quanty2");
+                var qty3 = document.getElementById("quanty3");
+                var tax = document.getElementById("tax");
+                var shipping = document.getElementById("quanty2");
+                var plant1 = parseFloat(qty1.value);
+                var plant2 = parseFloat(qty2.value);
+                var plant3 = parseFloat()
+
+
+            
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2> Cactus </h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Xit0rX2_L17VNVpPR6U6OH1lUmWw-x_YOsYs5cnLxKRNg-Zk">
+            <span>$10.00</span>
+            <p>
+            This low maintenance foot tall cactuse is perfect for those who 
+            don't have a green thumb
+            </p>
+            <input id="quantity1" type="text">
+
+        </div>
+        <button>Purchase</button>
+        <div id="invoice"></div>
+        
+        <div>
+            <h2> Lavendar </h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoA7EtYMOA8l45gsyAXRVd0DBsZAsv8yaQQxksUc6iZiIPvF8lXA">
+            <span>$15.00</span>
+            <p>
+            Lavendar is a beautiful purple plant that repels mosquitoes and gives 
+            off a calming sent 
+            </p>
+            <input id="quantity1" type="text">
+
+        </div>
+        <button>Purchase</button>
+        <div id="invoice"></div>
+        
+         <div>
+            <h2> Aloe </h2>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhURERMVFhAWFhAZFRYXFRMVFRkdFhIWGB0VFhUYHCggGBolHRUYITEhJSkrLi4uFyAzODMuNygtLi4BCgoKDg0OGxAQGi4dICUvLy0tLS0tLS0tLS0tLS0tLS0tLS0xLS0tLS0tLS8tLSstLS0tLS0tLS0tLS0tLSstLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQEDCAL/xABEEAABAwIDBQUECAIHCQAAAAABAAIDBBEFEiEGBzFBURMiYXGBMlKRoRQjQmJygsHhkrEVQ1OisvDxJTNEY5OUs8Li/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFBv/EACURAQACAgICAgICAwAAAAAAAAABAgMRITESQQQFIoFhcSMyUf/aAAwDAQACEQMRAD8AvFERAREQEREBERARFH9otpBRz07JG/UzGQOfzYWllnH7ve16KLWisbkSBFwFypBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAUI3sU2alY85bMlbmLhcZXggg216cPBTdaDbqlEtBO0gGzQ6x55HB9r8tGnVUyRuswienxsDjH0uiilOjhmY4XJsWG3E6nSx9VIlV+5rFYyZ6WMOaxuWRjXOu7iWuJ6fYCtBRindYkrPAi+XvAFyQB1OgX0tEiIiAiIgIi0FDtPHNXS0UTHO7FmaWX+rDi5oEQ942JJPK1uN7Rsb9ECKQREQEREBERAREQEREBERAREQEREBdFbCHxvYeDmvb8Wkfqu9EFJbCV74MRhjkyODg+MSNsHd9tw19uJzMA16q7QvPuMVH0eskd2YzRz3a72SCx4tpz0jIv5q/oJQ9oe3VrgCPIi4WGDjcKURnefUujwyoc02d9UAfOZg/ZSeJ4cA4cCAR6hRHeyf9mycLZ4L/8AVb+yzt3uI9vh8Dybua3s3ecZLL/IFX8v8mv4W3ykaIi0SIiINHtnjooaOWp4ua20YPN7jlaPiR6AqNbmcJMdG6pk1lqXueXHiQCRqeNy4uPqtFvYq5Kytp8Nh1DHMc/mO0k7rQ4Dk1pJP4wrWoKRsMbImCzGNa1vk0WWfdv6V7lkIiLRYREQEREBERAREQEREBERAREQEREBcFcog8+7V1cc1Q97Y3dpM91mvIGR3D2+mYv04aAq49hartKGE63a3Ib8e4S0X8wAfVVVt7hmWeaINs4TudGebu1aH9nbpr8QpjudrGugmjaCGtkDmgm5Ae21iedi1c1NxdnXtuN6TAcMqL20EZ1v/at6c+nionuMxO7ailJvYslbc8ngNcAOgLQfzKZbx482GVQte0ea34XB36KoN19e2HEKUjjKJonm54PsWi34o2/xK9p1eJTPFnoRERbLixsSrWQRSTSG0cbHvcfBoJP8lkqtN+GM5KVlG11nVDrv69nEQ4/F2QeIzKJnUImdNDukifW4hPiEo7wzvI42dKbNF+dmhw9ArpUH3Q4YIqASZbOncXnrYAMHp3SfzKcKtOivQiIrpEREBERAREQEREBERAREQEREBERAREQVjvdpHAtlblyuieHAjiWEat+9Z/yWq3SYiBWOjADWyRWtf7TA3XXr3z6qVb2oHGmje32mzNt43aTb4tCrzZvEy2up5JMocJWMOUAAh5LS5xB1IzLnvxdnPFlw7bMvh9WBxME/h9grzbQVBhcyYf1b43i3H6twd+i9L7WgGiqb8Own/wDGV5hsSPPT/IU5ey71jDIHNDhqCAR5EXX2o9u/ru3w6mkPHsww+cZMZ/wqQraOYaOCqC26qn12KuEOvZujgYbXAMcli48rdq/L8FdO1GLtpKWWod9hji0dXHRrfVxAuqi3WYS6aubM43bGJHO4XL9CSRy7zwR+ErPJzwrb/i6cOpGwxRxN9mNjGjya0D9Fkoi1WEREBERAREQEREBERAREQEREBEWNiLphE8wBpmAJYH3DSR9kkcL8LoMlFHtmtq4qomJzTDVNuHwv0cCOOX3gpCq1tFo3AIiKwjG8WHNQyOtfs3Rv0tfR4vx8CVRpaWO0OoOhF7Ah2nHyBXorHqftKaaP3o5B/dKoCbLfxudeWpHL4/JYZo52zuu7HKoSYZLK3UPpXuHrFdea3O7osr5oavtcDlynvMp6iM6c2sP6EKicgsptO9Siy7dx9ZnoXx/2c7x/G1r/AOZKsRUtuexQU8WIPIuGMgkDb2vbtQRfl9nVXODcK9J4Xr0rvfRigbTxUwPelfnePuRa6+Bfl+BTcxhwZBLPxMjmC/k3MR8X29FE95teKjETGb9nCI4iQNe8czyPHvW/KrV2IoRDRQstYluc/nObX0IHoqxzdHdm9WmxzEnMlpqeM/WTya+EcQzvPro3863Kg+ylWK3EKqsGsMIFPAeWhu9wPA3I49LK1p6haU3C6aysiiYZJXtZGOLnODWjzJWLjuMwUcLpp3BrBw6uPJrRzJUM2ZoajE5m4hXtywMdmpKe92g/2rvePGxPPoAEm2p1HZtYYK5XAXKukREQEREBERAREQEREBcLlEEE3jYNcw1MVo5RI1pkByG50jJeOHe7t/vhbDZLad0x+j1LclU0luvCQtHet0cOYW/xfD2VEMkEg7kjHNPUXHEeIOvoqrro5pGSCQFtdROa2VwuC9gtkqmdbjLm6aFc94mtvKFJ4lcCKK7FbUfSmmKUgVLBrbQSNBtnb8RfzHVSpbVtFo3C8Tt8yNuCOoI+K87YjTlriDxF/k63816LVEbV0xZVSt5Z5LepJA+azy9KX6b7ZquH9FV8Rv3YpX35WfER/Nqqd0gt46Kb4fWGOlrWe/SVDfUDQ/Nyr9r9FSJ3CnaUbIVmWOrj+1LHTMH/AHUYPyefgvR00rWMLnGzWgknoALk/JeY9j4g+rgbrcz0wHP+tBPyCvXebiYgw+YA2fKBEwcyZDY28m5j6K9Pa9VQ4W51XV3e276iQnj7JklGvjZpI9F6HjYAABwAAHoFTu66hY+ra4XJiZIXdBazQAeeriVcanFHclEX3kY59EoZHtNppPqouuZ4Oo8mhzvRYuw8UWH4UySYhjcrpZD+I3AtzNsotzJUP3n1RrMRhoWuAZEG5zfQPk1c4/hjsfUrD2kxeTFamOjpdKZhDYW2Ja8tsDLIOTA25HgOrgFSb/lM/omeWywqnmxysM9QLUMJOSO9xY8GnX23aFx5Cw5gq2o2BoAAAAAAA0AA5Aclg4BhEdJAyCMd1o1PNzj7Tz4k6rYrWldd9rRGhERXSIiICIiAiIgIiICIiAiIgKFbf4bJGWYlTi80GkrbaSwm+Zrhztc+hKmq+XtBFiLg6EHh6qtq7jSJjamMRb9Hkjq6R31LrPgdqbdWP8jdpBPAq1dncYZVwtlbo7g9t7lrubT+h5iyrHHcNFFI+ikuKOYmSmk1d2T/AHbe6b5T+UrD2S2iNBUWlsIXENl1vbWwfpzbf4XXPW3jZSJ1K7VT+8aLLWP049m4erGg/MFW+CCNOCrLevT/AFsb/ejI/hd/9BbZOarX6QiJjXNexxIY5rwS0d6xH2RzPhzUKji0uprSmxCjWIvYyaVjGWaO6A45st7HMDy8OgPNc9J5ZQ3m7OAOrqcHT629/wALdB5Kbb6sRvLT0w4sa+d3rdjf8L/goHsZUCOoppHHKwTQ3N9BmlDSfDRZe0GOmrrpKmwLMzWRtN7FkZJF+eup/MrxbUStE8SsndLRtyTTBuW5jYNb6tbdxv4k39VNMXxGOnhknkNmMaSfHo0eJNh6rTbuqbJQRdX53n8zjY/ABQvexj3azNomO7kdny25vIu1p8Gg383Dor78Ma8TqqCVMkkrpZn27WVziTewvI65FzwAF/QK291+zhggFRMPrpB3BaxZGXZgD952jj0GUclENjNmhVzRiQXgiIklHJx1DI/UhxPgPFXRZUw09yrSPbkIiLpaCIiAiIgIiICIiAiIgIiICIiAiIg0u1mAMrad0LtHjvRu91wGh8uRVG4rTvDntmblmjIZK0Cw6NfYcj19ea9GKu96WA936fG3VgyVAA9qIm2e3NzOPkPBZZKb5VtHt9bpsfL4focrryRD6om13R6WHm3h5W8V3b2oLwwye69zf423t/cVcUM8sD2PiIEjHBzH30de9gRzaRoVZW1VfHXYQ+oj0y5XkG12OjeMzT42v5g35qlLbrNZRE7hV8IWl2qv2rHECxj0sACbO1zH7RFxx5WC2VM8dVj7UZzE2xPZhzSRyB1Ae7w1t6rGJ1ZnHbApSGNvm4GI5hfrfTxXdh8pa15sDma7iL8xqPH91iGwiI46tsRwNv0Uh2PpTLUU8FhZ0sROmvcu93plzfBW9JXXi2INw7D85teKJjGNv7T7BrW38XKmMOIleXPGaQnM5pJLpXFwvkPHOS5xI4WAHK6mO9PGmSVDaS944GukeMpdmkyhzGADQd3i46APPRY2wFGamoY8x2DQ17nnTobN6glrRr49SrX/ACtpaeZ0s3Z/DG08LWAAONi+wtckAfIAD0WzXAXK6YjTQREUgiIgIiICIiAiIgIiICIiAiIgIiIC+JYw4FrgC0ggg6gg6EFfaIKR2j2adRy9jYmEZnU7/wDl31iJ95h+Tm+Nmy2JBhlpH3EFYyRjyeDJHMyNcL8L3sfTorfxnDI6iMxydbtdza4Ai49CR5EqjccojDKW9CQfToubJHjO4ZzGuWlwtx9lws5tw4eINj81mYpD2kTmjiRewIBNtbXOnJa/M1kwLScr7k34BxJuB58dfFbqoa0tv10KwtOp2zREyAxtA5vHwsf2U02Hr2w1PbvbdtPTyuAGl3HutafEmRw/0UNfGGPytOZrCTmy24W4g/BSTCaGzc7iRI+znX0sL91gHMkkH18FeJWZtOyWSZ8oa6SQlxke67WWkAvdoNyDdwtfgQre2LwsxQiR/wDvJA0nW9gL29dSdOoHJRDZTBnOka15uNL8Ro03J8eJHwVnttwHLktsVfcr0j2+kRFuuIiICIiAiIgIiICIiAiIgIiICIiAiIgLhcogqje1txV08ooaW0Tixr3TuIuQ4kZYr6Ai2p43tYKo4cSmjY9smdzS9x7R1z3+J7x5m4Prfmrr3u0DX9i9zQdJGgkXIOhuDyOp1VV/0UwDKbkam4Iv7NgLHS17XNr2v4LlyZIi2pduP4lsuPdWvFcHgtdpwv1B5HzWY2vdlLSQSOY4HS9xddX9GTEZbMLABa41aBfg7KTbX2dQjsNyktsXsHB+rC6x5s5D1/bKZpPtlb6/LHUO7BgXP7V3dDSLWNi5zTcE24gX18gFJGyQmz5Ld03u7RumpLh9oaWUaloJ+BsH8MouA0cgSBxtxtwX1WYUX2Ae4ssMwePtacCDq3/NlPlWPZX6/PM/6trLvBq2VAdRkNhaA1rZBcStJuS4aObcjSxGnyuHdvjMlZQQzym8p7QPOUNBLXuHdA0tp8lR+H4JEx4dkzHW5JPxtwJXojAKbs6aFlrWjZpa1u7e1lthvFp46Wz/AB5w1jy7bBERdDlEREBERAREQEREBERAREQEREBERAREQEREGi2zoWS0kuYXLGuew8wWi9x6XVHyvsdQfTVegsWjzQyt6xyD4tKoSUari+VHUvY+stOph0NqmWIvxtxBHO67Ip2Dvlw+6L8SOfkP2XIZzP8AqucgPJcM6e1G3WJ2+8E7ccrn0P6ruyDouQ1I0Ttu9h6Fs1XG2Rt2C7iDzyi4v4X5K6Aqt3aRXqifdjefm0fqrSXp/GjVHzn2NpnLpyiIuhwCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD4kbcEdQR8V59qRZxHQlehFQWOsyVErekkg/vFcvyo4h6n1c/laGKF2MXUwrsBXnS9+On2gRAUhFuk83XxfWTO6MaPi6/wCisVQjddH9XM77zBfyBNvmFOF62CNUh8v8yd5rCIi1coiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg4soptRsLBWOMrXGKoPF7QC11hYZ2nj5gg6KWIomsTGpXpe1J8qzqVP1O7vEIz3eylbrYteWO9WuFh8SsOTZHER/wrj5OiP/urrKLnn4tJd9ftM8d6n9Kdw/YfEZTrGyFvMyvBP5Wx3v6kLeU+7OTN9ZVAx6exHlf4gEuI9beisay5Vq/Hxx6ZX+wz2ne9f0w8Kw2KmjEULcrB6kk8SSeJKzERbuOZmZ3IiIiBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf/2Q==">
+            <span>$8.00</span>
+            <p>
+            Low maintenance plant with many home remedie uses 
+            </p>
+            <input id="quantity1" type="text">
+
+        </div>
+        <button>Purchase</button>
+        <div id="invoice"></div>
+    
+    </body>
+</html>
+
+
+
+
